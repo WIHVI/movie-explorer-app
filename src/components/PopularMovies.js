@@ -1,4 +1,3 @@
-import React from "react";
 import MovieList from "./MovieList";
 import useFetch from "./useFetch";
 
