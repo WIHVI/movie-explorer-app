@@ -4,10 +4,12 @@ import PopularMovies from "./components/PopularMovies.js";
 import TopRatedMovies from "./components/TopRatedMovies.js";
 import MovieSearch from "./components/MovieSearch.js";
 import MovieDetails from "./components/MovieDetails.js";
+import Navbar from "./components/Navbar.js";
 
 function App() {
   return (
     <>
+      <Navbar />
       <div className="container">
         <Routes>
           <Route path="/" element={<PopularMovies />} />
