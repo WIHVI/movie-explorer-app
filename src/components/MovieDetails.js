@@ -1,5 +1,6 @@
 import useFetch from "./useFetch";
 import { useParams } from "react-router-dom";
+import { AiOutlineStar } from "react-icons/ai";
 
 const MovieDetails = () => {
   const { id } = useParams();
@@ -26,7 +27,7 @@ const MovieDetails = () => {
             <div>
               <p className="release-date">{movie.release_date}</p>
               <p className="rating">
-                <span>⭐️</span>
+                <AiOutlineStar className="star" />
                 {movie.vote_average}
               </p>
               <p className="runtime">{movie.runtime}min</p>

@@ -2,8 +2,8 @@
 
 * {
   box-sizing: border-box;
-  background-color: #333;
-  color: rgba(255, 255, 255, 90%);
+  background-color: #181818;
+  color: #B8BFD6;
   font-family: "Quicksand", sans-serif;
   margin: 0;
   padding: 0;
@@ -14,6 +14,10 @@
 .header {
   height: 70px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  width: 100%;
 }
 
 .nav {
@@ -67,11 +71,15 @@
   font-size: 30px;
 }
 
+.star {
+  font-size: 20px;
+}
+
 /* PopularMovies, TopRatedMovies and MovieSearch */
 
 .container {
   width: 90%;
-  margin: 50px auto;
+  margin: 150px auto;
 }
 
 .movie-list {
@@ -84,11 +92,12 @@
 .movie-poster {
   width: 100%;
   border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
 .movie-poster:hover {
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
-    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  box-shadow: none;
 }
 
 .popular-movies {
@@ -119,7 +128,7 @@
   width: 50%;
   padding: 6px 10px;
   margin: 10px auto;
-  border: 2px solid rgba(255, 255, 255, 90%);
+  border: 2px solid #B8BFD6;
   box-sizing: border-box;
   display: block;
   font-size: 16px;
@@ -159,7 +168,7 @@
 }
 
 .movie-details li {
-  border: 1px solid rgba(255, 255, 255, 90%);
+  border: 1px solid #B8BFD6;
   border-radius: 3px;
   padding: 2px 8px;
 }
@@ -172,8 +181,10 @@
   padding-left: 1rem;
 }
 
-.rating span {
-  padding-right: 0.25rem;
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 4px;
 }
 
 .overview {
