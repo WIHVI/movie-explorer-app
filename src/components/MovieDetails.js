@@ -28,7 +28,7 @@ const MovieDetails = () => {
               <p className="release-date">{movie.release_date}</p>
               <p className="rating">
                 <AiOutlineStar className="star" />
-                {movie.vote_average}
+                {movie.vote_average.toFixed(1)}
               </p>
               <p className="runtime">{movie.runtime}min</p>
             </div>

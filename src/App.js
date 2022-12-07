@@ -12,6 +12,7 @@ function App() {
       <Navbar />
       <div className="container">
         <Routes>
+          <Route path="/movie-explorer-app" element={<PopularMovies />} />
           <Route path="/" element={<PopularMovies />} />
           <Route path="/top-rated" element={<TopRatedMovies />} />
           <Route path="/search" element={<MovieSearch />} />

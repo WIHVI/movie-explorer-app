@@ -11,7 +11,7 @@ const Navbar = () => {
   return (
     <header className="header">
       <nav className="nav">
-        <Link to="/" className="nav-title">
+        <Link to="/movie-explorer-app" className="nav-title">
           Movie Explorer
         </Link>
         <ul className={sideBar ? "nav-menu active" : "nav-menu"}>
