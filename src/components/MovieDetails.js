@@ -1,4 +1,5 @@
 import useFetch from "./useFetch";
+import { Link } from "react-router-dom";
 import { useParams } from "react-router-dom";
 import { AiOutlineStar } from "react-icons/ai";
 
@@ -21,7 +22,16 @@ const MovieDetails = () => {
             <h1>{movie.title}</h1>
             <ul>
               {movie.genres.map((genre) => {
-                return <li key={genre.id}>{genre.name}</li>;
+                return (
+                  <li key={genre.id}>
+                    <Link
+                      to={`/genre/${genre.id}`}
+                      className="movie-details-link"
+                    >
+                      {genre.name}
+                    </Link>
+                  </li>
+                );
               })}
             </ul>
             <div>
