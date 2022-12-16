@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/movie-explorer-app/static/css/main.031bb3cd.css",
-    "main.js": "/movie-explorer-app/static/js/main.09a9eb9c.js",
+    "main.css": "/movie-explorer-app/static/css/main.1ce7d924.css",
+    "main.js": "/movie-explorer-app/static/js/main.afc3999d.js",
     "index.html": "/movie-explorer-app/index.html",
-    "main.031bb3cd.css.map": "/movie-explorer-app/static/css/main.031bb3cd.css.map",
-    "main.09a9eb9c.js.map": "/movie-explorer-app/static/js/main.09a9eb9c.js.map"
+    "main.1ce7d924.css.map": "/movie-explorer-app/static/css/main.1ce7d924.css.map",
+    "main.afc3999d.js.map": "/movie-explorer-app/static/js/main.afc3999d.js.map"
   },
   "entrypoints": [
-    "static/css/main.031bb3cd.css",
-    "static/js/main.09a9eb9c.js"
+    "static/css/main.1ce7d924.css",
+    "static/js/main.afc3999d.js"
   ]
 }
