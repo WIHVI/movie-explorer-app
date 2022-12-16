@@ -1,11 +1,12 @@
 import "./style.css";
 import { Route, Routes } from "react-router-dom";
+import Navbar from "./components/Navbar.js";
 import PopularMovies from "./components/PopularMovies.js";
 import TopRatedMovies from "./components/TopRatedMovies.js";
 import MovieSearch from "./components/MovieSearch.js";
 import MovieDetails from "./components/MovieDetails.js";
-import Navbar from "./components/Navbar.js";
 import GenreLinks from "./components/GenreLinks.js";
+import Footer from "./components/Footer.js";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/genre/:id" element={<GenreLinks />} />
         </Routes>
       </div>
+      <Footer />
     </>
   );
 }

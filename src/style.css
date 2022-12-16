@@ -3,7 +3,7 @@
 * {
   box-sizing: border-box;
   background-color: #181818;
-  color: #B8BFD6;
+  color: #b8bfd6;
   font-family: "Quicksand", sans-serif;
   margin: 0;
   padding: 0;
@@ -87,7 +87,7 @@
 
 .container {
   width: 90%;
-  margin: 150px auto;
+  margin: 150px auto 100px auto;
 }
 
 .movie-list {
@@ -124,6 +124,7 @@
 
 .movie-search {
   text-align: center;
+  height: 100vh;
 }
 
 .movie-search h1 {
@@ -134,7 +135,7 @@
   width: 50%;
   padding: 6px 10px;
   margin: 10px auto;
-  border: 2px solid #B8BFD6;
+  border: 2px solid #b8bfd6;
   box-sizing: border-box;
   display: block;
   font-size: 16px;
@@ -182,7 +183,7 @@
 
 .movie-details li:hover {
   background-color: #668aff;
-  color: #fff;
+  color: #000;
 }
 
 .movie-details-link {
@@ -212,6 +213,36 @@
 .overview {
   font-size: 18px;
   line-height: 1.4;
+}
+
+/* Footer */
+
+.footer {
+  height: 90px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.footer a {
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.footer p {
+  color: #7c91d4;
+  font-size: 18px;
 }
 
 /* tablet and mobile */
