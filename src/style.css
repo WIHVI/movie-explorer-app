@@ -83,7 +83,7 @@
   font-size: 20px;
 }
 
-/* PopularMovies, TopRatedMovies and MovieSearch */
+/* Popular, NowPlaying, Upcoming, TopRated and Search */
 
 .container {
   width: 90%;
@@ -111,6 +111,22 @@
 }
 
 .popular-movies h1 {
+  font-size: 36px;
+}
+
+.now-playing-movies {
+  text-align: center;
+}
+
+.now-playing-movies h1 {
+  font-size: 36px;
+}
+
+.upcoming-movies {
+  text-align: center;
+}
+
+.upcoming-movies h1 {
   font-size: 36px;
 }
 
@@ -247,7 +263,7 @@
 
 /* tablet and mobile */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .hamburger-menu {
     display: block;
   }
@@ -286,7 +302,7 @@
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
   .movie-list {
     grid-template-columns: 1fr 1fr;
     grid-gap: 1rem;

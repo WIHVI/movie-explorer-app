@@ -21,6 +21,16 @@ const Navbar = () => {
             </Link>
           </li>
           <li className="nav-item" onClick={showSideBar}>
+            <Link to="/now-playing" className="nav-link">
+              Now Playing
+            </Link>
+          </li>
+          <li className="nav-item" onClick={showSideBar}>
+            <Link to="/upcoming" className="nav-link">
+              Upcoming
+            </Link>
+          </li>
+          <li className="nav-item" onClick={showSideBar}>
             <Link to="/top-rated" className="nav-link">
               Top Rated
             </Link>
