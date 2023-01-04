@@ -43,6 +43,9 @@ const MovieDetails = () => {
               <p className="runtime">{movie.runtime}min</p>
             </div>
             <p className="overview">{movie.overview}</p>
+            <Link to={`/similar-movies/${id}`} className="similar-movies">
+              Similar Movies
+            </Link>
           </div>
         </div>
       )}

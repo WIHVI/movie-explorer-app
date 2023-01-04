@@ -8,6 +8,7 @@ import TopRatedMovies from "./components/TopRatedMovies.js";
 import MovieSearch from "./components/MovieSearch.js";
 import MovieDetails from "./components/MovieDetails.js";
 import GenreLinks from "./components/GenreLinks.js";
+import SimilarMovies from "./components/SimilarMovies.js";
 import Footer from "./components/Footer.js";
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
           <Route path="/search" element={<MovieSearch />} />
           <Route path="/movies/:id" element={<MovieDetails />} />
           <Route path="/genre/:id" element={<GenreLinks />} />
+          <Route path="/similar-movies/:id" element={<SimilarMovies />} />
         </Routes>
       </div>
       <Footer />
