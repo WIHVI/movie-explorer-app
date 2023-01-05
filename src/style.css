@@ -63,7 +63,7 @@
 }
 
 .nav-link:hover {
-  color: #fff;
+  color: #7c91d4;
 }
 
 .hamburger-menu {
@@ -178,8 +178,33 @@
   max-width: 60%;
 }
 
-.movie-details h1 {
-  margin-bottom: 1rem;
+.title_and_trailer-btn {
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.trailer-btn {
+  color: #668aff;
+  cursor: pointer;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.trailer-btn:hover {
+  color: #7c91d4;
+}
+
+.play-icon {
+  font-size: larger;
+}
+
+.close-icon {
+  font-size: 30px;
 }
 
 .movie-details ul {
@@ -212,7 +237,7 @@
   align-items: center;
 }
 
-.movie-details div {
+.movie-details-list {
   margin-bottom: 0.7rem;
   display: flex;
   flex-direction: column;

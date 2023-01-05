@@ -8,18 +8,12 @@ const PlayTrailer = () => {
     `https://api.themoviedb.org/3/movie/${id}/videos?api_key=4ea3c6db50c092c7a9667c9e47ef2cca&language=en-US`
   );
 
-  const playTrailer = () => {
+  const PlayTrailer = () => {
     const trailer = movies.results.find((video) => video.type === "Trailer");
-    return (
-      <YouTube
-        className={"play-trailer"}
-        videoId={trailer.key}
-        //opts={{ width: '100%', height: '80%' }}
-      />
-    );
+    return <YouTube className={"play-trailer"} videoId={trailer.key} />;
   };
 
-  return <div>{movies && playTrailer()}</div>;
+  return <div>{movies && PlayTrailer()}</div>;
 };
 
 export default PlayTrailer;

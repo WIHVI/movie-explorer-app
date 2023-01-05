@@ -1,25 +1,43 @@
 import useFetch from "./useFetch";
-import { Link } from "react-router-dom";
-import { useParams } from "react-router-dom";
+import { useState } from "react";
+import { useParams, Link } from "react-router-dom";
+import PlayTrailer from "./PlayTrailer.js";
 import { AiOutlineStar } from "react-icons/ai";
+import { BsPlayFill } from "react-icons/bs";
+import { IoClose } from "react-icons/io5";
 
 const MovieDetails = () => {
+  const [playTrailer, setPlayTrailer] = useState(false);
   const { id } = useParams();
   const { movies: movie } = useFetch(
     `https://api.themoviedb.org/3/movie/${id}?api_key=4ea3c6db50c092c7a9667c9e47ef2cca&language=en-US`
   );
-
   return (
-    <>
+    <div>
       {movie && (
         <div className="movie-details-wrapper">
-          <img
-            className="movie-details-poster"
-            src={`https://image.tmdb.org/t/p/w500${movie.backdrop_path}`}
-            alt={`${movie.title} Image`}
-          />
+          {playTrailer ? (
+            <div className="trailer">
+              <div onClick={() => setPlayTrailer(false)}>
+                <IoClose className="close-icon" fill="#668aff" />
+              </div>
+              <PlayTrailer />
+            </div>
+          ) : (
+            <img
+              className="movie-details-poster"
+              src={`https://image.tmdb.org/t/p/w500${movie.backdrop_path}`}
+              alt={`${movie.title} Image`}
+            />
+          )}
           <div className="movie-details">
-            <h1>{movie.title}</h1>
+            <div className="title_and_trailer-btn">
+              <h1>{movie.title}</h1>
+              <p className="trailer-btn" onClick={() => setPlayTrailer(true)}>
+                <BsPlayFill className="play-icon" fill="#668aff" />
+                Play Trailer
+              </p>
+            </div>
             <ul>
               {movie.genres.map((genre) => {
                 return (
@@ -34,7 +52,7 @@ const MovieDetails = () => {
                 );
               })}
             </ul>
-            <div>
+            <div className="movie-details-list">
               <p className="release-date">{movie.release_date}</p>
               <p className="rating">
                 <AiOutlineStar className="star" />
@@ -49,7 +67,7 @@ const MovieDetails = () => {
           </div>
         </div>
       )}
-    </>
+    </div>
   );
 };
 
