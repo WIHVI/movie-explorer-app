@@ -2,7 +2,7 @@
 
 ## Description
 
-A React website which dynamically displays a range of movies (popular, now playing, upcoming, and top rated movies) and a search link where you can look for your desired movies. Each movie card has a personalised page where you can find more details about it, and each genre link has a dedicated page that displays 20 most popular movies from its range.
+A React website which dynamically displays a range of movies (popular, now playing, upcoming, and top rated movies) and a search page where you can look for your desired movies. Each movie has a personalized page where you can find more details about it, and each genre link has a dedicated page that displays 20 most popular movies from its range. Here you can also find another link which gives you similar movies and a play trailer button that displays the selected movie trailer.
 
 ## Futures
 
